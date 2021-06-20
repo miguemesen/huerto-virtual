@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="702.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tec.hv.app.Controller">
+   <children>
+      <Pane layoutX="163.0" layoutY="134.0" prefHeight="513.0" prefWidth="286.0">
+         <children>
+            <ImageView fitHeight="176.0" fitWidth="208.0" layoutX="33.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Maceta.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="9.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAgua">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@WateringCan.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="71.0" layoutY="462.0" mnemonicParsing="false" onAction="#quitarPlaga" prefHeight="51.0" prefWidth="62.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Plaguicidas.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="133.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAbono" prefHeight="51.0" prefWidth="62.0">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Abono.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="195.0" layoutY="462.0" mnemonicParsing="false" onAction="#cosechar" prefHeight="51.0" prefWidth="62.0">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Sickle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fx:id="plantaNormal" fitHeight="361.0" fitWidth="531.0" layoutX="-141.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@planta.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="orchid1" fitHeight="85.0" fitWidth="83.0" layoutX="83.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Orchid.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="orchid2" fitHeight="61.0" fitWidth="76.0" layoutX="95.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Orchid.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="orchid3" fitHeight="61.0" fitWidth="76.0" layoutX="143.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Orchid.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tomato1" fitHeight="56.0" fitWidth="39.0" layoutX="105.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" rotate="22.6" visible="false">
+               <image>
+                  <Image url="@tomato.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tomato2" fitHeight="51.0" fitWidth="42.0" layoutX="122.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true" rotate="31.0" visible="false">
+               <image>
+                  <Image url="@tomato.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="insecto1" fitHeight="38.0" fitWidth="83.0" layoutX="154.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Insecto.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="insecto2" fitHeight="29.0" fitWidth="76.0" layoutX="80.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" visible="false">
+               <image>
+                  <Image url="@Insecto.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D y="1.0" />
+               </rotationAxis>
+            </ImageView>
+            <ImageView fx:id="insecto3" fitHeight="29.0" fitWidth="69.0" layoutX="161.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@Insecto.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="alertaAgua" fitHeight="96.0" fitWidth="132.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@alertaAgua.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="alertaAbono" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@alertaAbono.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="alertaCosecha" fitHeight="96.0" fitWidth="136.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@alertaCosecha.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="alertaPlaga" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@alertaPlaga.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tomato3" fitHeight="35.0" fitWidth="42.0" layoutX="177.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@tomato.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="36.0" layoutY="81.0" prefHeight="176.0" prefWidth="105.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#activarPlaga" text="Activiar Plaga" />
+            <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate" text="Activar Tomate" />
+            <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea" text="Activiar Orquidea" />
+            <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga" text="Alerta Plaga" />
+            <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono" text="Alerta Abono" />
+            <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha" text="Alerta Cosecha" />
+            <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua" text="Alerta Agua" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
