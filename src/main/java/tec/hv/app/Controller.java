@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -67,6 +68,18 @@ public class Controller {
     public Button gameOverButton;
 
 
+    // Puntaje
+    public Label scoreLabel;
+    public Button bajarPuntosButton;
+
+    public void bajarPuntos(ActionEvent actionEvent) {
+        System.out.println("Entra");
+        int puntaje = Integer.parseInt(scoreLabel.getText());
+        int nuevoPuntaje = puntaje-15;
+        scoreLabel.setText(String.valueOf(nuevoPuntaje));
+    }
+
+
     // METODOS PLANTA UNO
 
     public void echarAgua_PLANTA_UNO(ActionEvent actionEvent) {
@@ -78,6 +91,7 @@ public class Controller {
         insecto2_PLANTA_UNO.setVisible(false);
         insecto3_PLANTA_UNO.setVisible(false);
         alertaPlaga_PLANTA_UNO.setVisible(false);
+
     }
 
     public void echarAbono_PLANTA_UNO(ActionEvent actionEvent) {
@@ -306,4 +320,5 @@ public class Controller {
             e.printStackTrace();
         }
     }
+
 }
