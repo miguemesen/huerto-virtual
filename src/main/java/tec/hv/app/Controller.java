@@ -259,58 +259,68 @@ public class Controller {
 
     // Muestra la alerta de cosecha y sus respectivos frutos
    public void mostrarCosecha(int poscion, String tipo){
-        switch (poscion){
-        
-            case 1: // Posicion 1
-                if (tipo == ""){ // Orquidea
-                    orchid1_PLANTA_UNO.setVisible(true);
+	  
+		System.out.println(poscion+" "+tipo);
+       
+	   switch (poscion){
+	   			
+            case 0: // Posicion 1
+                if (tipo.equals("Ornamental")){ // Orquidea
+                	orchid1_PLANTA_UNO.setVisible(true);
                     orchid2_PLANTA_UNO.setVisible(true);
                     orchid3_PLANTA_UNO.setVisible(true);
                     alertaCosecha_PLANTA_UNO.setVisible(true);
                 }
-                if (tipo == ""){ // Tomate
+                
+                if (tipo.equals("CicloLargo")){ // Tomate
                     tomato1_PLANTA_UNO.setVisible(true);
                     tomato2_PLANTA_UNO.setVisible(true);
                     tomato3_PLANTA_UNO.setVisible(true);
                     alertaCosecha_PLANTA_UNO.setVisible(true);
                 }
-                if (tipo == ""){ // Brocoli
-                    alertaCosecha_PLANTA_UNO.setVisible(true);
+                
+                if (tipo.equals("CicloCorto")){ // Brocoli
+                	alertaCosecha_PLANTA_UNO.setVisible(true);
                 }
+                
+                break;
 
-            case 2: // Posicion 2
-                if (tipo == ""){ // Orquidea
+            case 1: // Posicion 2
+                if (tipo.equals("Ornamental")){ // Orquidea
                     orchid1_PLANTA_DOS.setVisible(true);
                     orchid2_PLANTA_DOS.setVisible(true);
                     orchid3_PLANTA_DOS.setVisible(true);
                     alertaCosecha_PLANTA_DOS.setVisible(true);
                 }
-                if (tipo == ""){ // Tomate
+                if (tipo.equals("CicloLargo")){ // Tomate
                     tomato1_PLANTA_DOS.setVisible(true);
                     tomato2_PLANTA_DOS.setVisible(true);
                     tomato3_PLANTA_DOS.setVisible(true);
                     alertaCosecha_PLANTA_DOS.setVisible(true);
                 }
-                if (tipo == ""){ // Brocoli
+                if (tipo.equals("CicloCorto")){ // Brocoli
                     alertaCosecha_PLANTA_DOS.setVisible(true);
                 }
+                break;
 
-            case 3: // Posicion 3
-                if (tipo == ""){ // Orquidea
+            case 2: // Posicion 3
+                if (tipo == "Ornamental"){ // Orquidea
                     orchid1_PLANTA_TRES.setVisible(true);
                     orchid2_PLANTA_TRES.setVisible(true);
                     orchid3_PLANTA_TRES.setVisible(true);
                     alertaCosecha_PLANTA_TRES.setVisible(true);
                 }
-                if (tipo == ""){ // Tomate
+                if (tipo.equals("CicloLargo")){ // Tomate
+                	
                     tomato1_PLANTA_TRES.setVisible(true);
                     tomato2_PLANTA_TRES.setVisible(true);
                     tomato3_PLANTA_TRES.setVisible(true);
                     alertaCosecha_PLANTA_TRES.setVisible(true);
                 }
-                if (tipo == ""){ // Brocoli
+                if (tipo.equals("CicloCorto")){ // Brocoli
                     alertaCosecha_PLANTA_TRES.setVisible(true);
                 }
+                break;
         }
     }
 

@@ -14,7 +14,7 @@
       "nombre": "Tomate",
       "riego":2,
       "abono":2,
-      "cosecha":3
+      "cosecha":1
     },
     {
       "tipo": "CicloCorto",
