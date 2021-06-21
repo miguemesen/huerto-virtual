@@ -12,10 +12,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("huerta.fxml")));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("startScreen.fxml")));
             primaryStage.setTitle("Huerta virtual");
+            Scene scene = new Scene(root, 713, 400);
             primaryStage.setResizable(false);
-            Scene scene = new Scene(root, 1160, 650);
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {

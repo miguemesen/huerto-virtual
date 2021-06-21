@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="702.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tec.hv.app.Controller">
+<AnchorPane prefHeight="550.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tec.hv.app.Controller">
    <children>
-      <ImageView fitHeight="673.0" fitWidth="1160.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="668.0" fitWidth="1155.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@background.png" />
          </image>
@@ -17,49 +17,13 @@
 
       <!-- PLANTA UNO __________________________________________________________________________________ -->
 
-      <Pane layoutX="163.0" layoutY="134.0" prefHeight="513.0" prefWidth="286.0">
+      <Pane layoutX="111.0" prefHeight="578.0" prefWidth="344.0">
          <children>
             <ImageView fitHeight="176.0" fitWidth="208.0" layoutX="33.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Maceta.png" />
                </image>
             </ImageView>
-            <Button layoutX="9.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAgua_PLANTA_UNO">
-               <graphic>
-                  <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@WateringCan.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="71.0" layoutY="462.0" mnemonicParsing="false" onAction="#quitarPlaga_PLANTA_UNO" prefHeight="51.0" prefWidth="62.0">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Plaguicidas.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="133.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAbono_PLANTA_UNO" prefHeight="51.0" prefWidth="62.0">
-               <graphic>
-                  <ImageView fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Abono.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="195.0" layoutY="462.0" mnemonicParsing="false" onAction="#cosechar_PLANTA_UNO" prefHeight="51.0" prefWidth="62.0">
-               <graphic>
-                  <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Sickle.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
             <ImageView fx:id="plantaBrocoli_PLANTA_UNO" fitHeight="276.0" fitWidth="244.0" layoutX="22.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@brocoli.png" />
@@ -138,19 +102,16 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-         </children>
-      </Pane>
-
-      <!-- PLANTA DOS __________________________________________________________________________________ -->
-
-      <Pane layoutX="500.0" layoutY="134.0" prefHeight="513.0" prefWidth="286.0">
-         <children>
-            <ImageView fitHeight="176.0" fitWidth="208.0" layoutX="33.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Maceta.png" />
-               </image>
-            </ImageView>
-            <Button layoutX="9.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAgua_PLANTA_DOS">
+            <Button layoutX="133.0" layoutY="462.0" mnemonicParsing="false" onAction="#cosechar_PLANTA_UNO" prefHeight="51.0" prefWidth="62.0">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Sickle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="71.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAgua_PLANTA_UNO">
                <graphic>
                   <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -159,16 +120,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="71.0" layoutY="462.0" mnemonicParsing="false" onAction="#quitarPlaga_PLANTA_DOS" prefHeight="51.0" prefWidth="62.0">
-               <graphic>
-                  <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Plaguicidas.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="133.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAbono_PLANTA_DOS" prefHeight="51.0" prefWidth="62.0">
+            <Button layoutX="71.0" layoutY="513.0" mnemonicParsing="false" onAction="#echarAbono_PLANTA_UNO" prefHeight="51.0" prefWidth="62.0">
                <graphic>
                   <ImageView fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -177,7 +129,73 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="195.0" layoutY="462.0" mnemonicParsing="false" onAction="#cosechar_PLANTA_DOS" prefHeight="51.0" prefWidth="62.0">
+            <Button layoutX="133.0" layoutY="513.0" mnemonicParsing="false" onAction="#quitarPlaga_PLANTA_UNO" prefHeight="51.0" prefWidth="62.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Plaguicidas.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+      
+      
+      
+            <!-- Comentario -->
+      
+            <Pane layoutX="-105.0" layoutY="84.0" prefHeight="231.0" prefWidth="105.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_UNO" text="Activiar Plaga" />
+                  <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_UNO" text="Activar Tomate" />
+                  <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_UNO" text="Activiar Orquidea" />
+                  <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_UNO" text="Alerta Plaga" />
+                  <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_UNO" text="Alerta Abono" />
+                  <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_UNO" text="Alerta Cosecha" />
+                  <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_UNO" text="Alerta Agua" />
+                  <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_UNO" text="brocoli" />
+                  <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_UNO" text="plantaNormal" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+
+      <!-- PLANTA DOS __________________________________________________________________________________ -->
+
+      <Pane layoutX="455.0" prefHeight="578.0" prefWidth="286.0">
+         <children>
+            <ImageView fitHeight="176.0" fitWidth="208.0" layoutX="33.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Maceta.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="71.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAgua_PLANTA_DOS">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@WateringCan.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="133.0" layoutY="513.0" mnemonicParsing="false" onAction="#quitarPlaga_PLANTA_DOS" prefHeight="51.0" prefWidth="62.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Plaguicidas.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="71.0" layoutY="513.0" mnemonicParsing="false" onAction="#echarAbono_PLANTA_DOS" prefHeight="51.0" prefWidth="62.0">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Abono.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="133.0" layoutY="462.0" mnemonicParsing="false" onAction="#cosechar_PLANTA_DOS" prefHeight="51.0" prefWidth="62.0">
                <graphic>
                   <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -264,20 +282,35 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
+      
+      
+            <Pane layoutX="-38.0" layoutY="67.0" prefHeight="231.0" prefWidth="105.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_DOS" text="Activiar Plaga" />
+                  <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_DOS" text="Activar Tomate" />
+                  <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_DOS" text="Activiar Orquidea" />
+                  <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_DOS" text="Alerta Plaga" />
+                  <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_DOS" text="Alerta Abono" />
+                  <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_DOS" text="Alerta Cosecha" />
+                  <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_DOS" text="Alerta Agua" />
+                  <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_DOS" text="brocoli" />
+                  <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_DOS" text="plantaNormal" />
+               </children>
+            </Pane>
          </children>
       </Pane>
 
 
       <!-- PLANTA TRES __________________________________________________________________________________ -->
 
-      <Pane layoutX="850.0" layoutY="134.0" prefHeight="513.0" prefWidth="286.0">
+      <Pane layoutX="777.0" layoutY="14.0" prefHeight="578.0" prefWidth="286.0">
          <children>
             <ImageView fitHeight="176.0" fitWidth="208.0" layoutX="33.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Maceta.png" />
                </image>
             </ImageView>
-            <Button layoutX="9.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAgua_PLANTA_TRES">
+            <Button layoutX="71.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAgua_PLANTA_TRES">
                <graphic>
                   <ImageView fitHeight="47.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -286,7 +319,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="71.0" layoutY="462.0" mnemonicParsing="false" onAction="#quitarPlaga_PLANTA_TRES" prefHeight="51.0" prefWidth="62.0">
+            <Button layoutX="133.0" layoutY="513.0" mnemonicParsing="false" onAction="#quitarPlaga_PLANTA_TRES" prefHeight="51.0" prefWidth="62.0">
                <graphic>
                   <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -295,7 +328,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="133.0" layoutY="462.0" mnemonicParsing="false" onAction="#echarAbono_PLANTA_TRES" prefHeight="51.0" prefWidth="62.0">
+            <Button layoutX="71.0" layoutY="513.0" mnemonicParsing="false" onAction="#echarAbono_PLANTA_TRES" prefHeight="51.0" prefWidth="62.0">
                <graphic>
                   <ImageView fitHeight="41.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -304,7 +337,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="195.0" layoutY="462.0" mnemonicParsing="false" onAction="#cosechar_PLANTA_TRES" prefHeight="51.0" prefWidth="62.0">
+            <Button layoutX="133.0" layoutY="462.0" mnemonicParsing="false" onAction="#cosechar_PLANTA_TRES" prefHeight="51.0" prefWidth="62.0">
                <graphic>
                   <ImageView fitHeight="39.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -391,55 +424,31 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
+      
+            <Pane layoutX="-52.0" layoutY="55.0" prefHeight="231.0" prefWidth="105.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_TRES" text="Activiar Plaga" />
+                  <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_TRES" text="Activar Tomate" />
+                  <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_TRES" text="Activiar Orquidea" />
+                  <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_TRES" text="Alerta Plaga" />
+                  <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_TRES" text="Alerta Abono" />
+                  <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_TRES" text="Alerta Cosecha" />
+                  <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_TRES" text="Alerta Agua" />
+                  <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_TRES" text="brocoli" />
+                  <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_TRES" text="plantaNormal" />
+               </children>
+            </Pane>
          </children>
       </Pane>
-
-
-
-      <!-- Comentario -->
-
-      <Pane layoutX="36.0" layoutY="81.0" prefHeight="231.0" prefWidth="105.0">
-         <children>
-            <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_UNO" text="Activiar Plaga" />
-            <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_UNO" text="Activar Tomate" />
-            <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_UNO" text="Activiar Orquidea" />
-            <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_UNO" text="Alerta Plaga" />
-            <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_UNO" text="Alerta Abono" />
-            <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_UNO" text="Alerta Cosecha" />
-            <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_UNO" text="Alerta Agua" />
-            <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_UNO" text="brocoli" />
-            <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_UNO" text="plantaNormal" />
-         </children>
-      </Pane>
-
-
-      <Pane layoutX="470" layoutY="81.0" prefHeight="231.0" prefWidth="105.0">
-         <children>
-            <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_DOS" text="Activiar Plaga" />
-            <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_DOS" text="Activar Tomate" />
-            <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_DOS" text="Activiar Orquidea" />
-            <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_DOS" text="Alerta Plaga" />
-            <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_DOS" text="Alerta Abono" />
-            <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_DOS" text="Alerta Cosecha" />
-            <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_DOS" text="Alerta Agua" />
-            <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_DOS" text="brocoli" />
-            <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_DOS" text="plantaNormal" />
-         </children>
-      </Pane>
-
-      <Pane layoutX="780" layoutY="81.0" prefHeight="231.0" prefWidth="105.0">
-         <children>
-            <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_TRES" text="Activiar Plaga" />
-            <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_TRES" text="Activar Tomate" />
-            <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_TRES" text="Activiar Orquidea" />
-            <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_TRES" text="Alerta Plaga" />
-            <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_TRES" text="Alerta Abono" />
-            <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_TRES" text="Alerta Cosecha" />
-            <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_TRES" text="Alerta Agua" />
-            <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_TRES" text="brocoli" />
-            <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_TRES" text="plantaNormal" />
-         </children>
-      </Pane>
+      <Button fx:id="gameOverButton" layoutX="991.0" layoutY="598.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="133.0" onAction="#gameOver">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@endButton.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
 
    </children>
 </AnchorPane>

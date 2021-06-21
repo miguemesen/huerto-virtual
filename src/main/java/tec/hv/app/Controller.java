@@ -1,8 +1,15 @@
 package tec.hv.app;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+
+import java.util.Objects;
 
 public class Controller {
 
@@ -57,6 +64,7 @@ public class Controller {
     public ImageView alertaCosecha_PLANTA_TRES;
     public ImageView alertaPlaga_PLANTA_TRES;
     public ImageView tomato3_PLANTA_TRES;
+    public Button gameOverButton;
 
 
     // METODOS PLANTA UNO
@@ -283,4 +291,19 @@ public class Controller {
         plantaNormal_PLANTA_TRES.setVisible(true);
     }
 
+    public void gameOver(ActionEvent actionEvent) {
+        try {
+            Stage stage = (Stage) gameOverButton.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("startScreen.fxml")));
+            Stage mainMenuStage = new Stage();
+            mainMenuStage.setResizable(false);
+            mainMenuStage.setTitle("Huerta virtual");
+            Scene scene = new Scene(root, 713, 400);
+            mainMenuStage.setScene(scene);
+            mainMenuStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
