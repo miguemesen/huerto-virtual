@@ -1,6 +1,4 @@
 package tec.hv.app;
-import java.util.Timer;
-import java.util.TimerTask;
 import java.util.ArrayList;
 
 public class DayProcess {
@@ -55,7 +53,6 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
     } catch (InterruptedException e) {
       System.out.println("Error en el hilo4 " + e);
     }
-   
     
     try {
 		hiloCosecha.join();
@@ -109,7 +106,14 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
 
 
 public void finalizar() {
-		  System.out.println("Fin del juego");
+	
+	hiloRiego.stop();
+	hiloAbono.stop();
+	hiloCosecha.stop();
+	hiloPlaga.stop();
+	
+	System.out.println("Fin del juego");
+		  
 	  }
 	  
  }

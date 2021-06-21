@@ -19,7 +19,8 @@ public class controlBackend extends Thread{
 	    Player jugador = parser.cargarJugador();
 	    
 	    DayProcess dia = new DayProcess();
-     	dia.iniciarDia(plantas,jugador,controlador); 
+     	dia.iniciarDia(plantas,jugador,controlador);
+     	
 	}
 
 }
