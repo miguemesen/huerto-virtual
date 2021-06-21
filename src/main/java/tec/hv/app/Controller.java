@@ -128,13 +128,6 @@ public class Controller {
     }
 
 
-    public void alertaAbono_PLANTA_UNO() {
-        alertaAbono_PLANTA_UNO.setVisible(true);
-    }
-
-    public void alertaAgua_PLANTA_UNO() {
-        alertaAgua_PLANTA_UNO.setVisible(true);
-    }
 
 
     // METODOS PLANTA DOS
@@ -178,13 +171,7 @@ public class Controller {
     }
 
 
-    public void alertaAbono_PLANTA_DOS() {
-        alertaAbono_PLANTA_DOS.setVisible(true);
-    }
 
-    public void alertaAgua_PLANTA_DOS() {
-        alertaAgua_PLANTA_DOS.setVisible(true);
-    }
 
 
     // METODOS PLANTA TRES
@@ -225,13 +212,9 @@ public class Controller {
     }
 
 
-    public void alertaAbono_PLANTA_TRES() {
-        alertaAbono_PLANTA_TRES.setVisible(true);
-    }
 
-    public void alertaAgua_PLANTA_TRES() {
-        alertaAgua_PLANTA_TRES.setVisible(true);
-    }
+
+
 
     public void gameOver(ActionEvent actionEvent) {
         try {
@@ -246,6 +229,30 @@ public class Controller {
             mainMenuStage.show();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public void alertaAbono(int posicion){
+        if (posicion == 0){
+            alertaAbono_PLANTA_UNO.setVisible(true);
+        }
+        if (posicion == 1){
+            alertaAbono_PLANTA_DOS.setVisible(true);
+        }
+        if (posicion == 2){
+            alertaAbono_PLANTA_TRES.setVisible(true);
+        }
+    }
+
+    public void alertaRiego(int posicion){
+        if (posicion == 0){
+            alertaAgua_PLANTA_UNO.setVisible(true);
+        }
+        if (posicion == 1){
+            alertaAgua_PLANTA_DOS.setVisible(true);
+        }
+        if (posicion == 2){
+            alertaAgua_PLANTA_TRES.setVisible(true);
         }
     }
 
