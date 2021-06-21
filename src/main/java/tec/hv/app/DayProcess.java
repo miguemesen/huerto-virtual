@@ -84,7 +84,7 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
 		  if(plantas.get(i).getControlPlaga()==false) {
 			  restar=restar+15;
 		  }
-		  if(plantas.get(i).getCosecha()==false && !"Ornamental2".equals(plantas.get(i).getTipo())) {
+		  if(plantas.get(i).getCosecha()==false) {
 			  restar=restar+20;
 		  }
 	

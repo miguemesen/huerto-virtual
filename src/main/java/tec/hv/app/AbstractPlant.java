@@ -1,7 +1,9 @@
 package tec.hv.app;
+import java.util.ArrayList;
+//import java.util.List;
 
 public abstract class AbstractPlant {
-	 private static int idPlantas = 0;
+
 	  private String tipo;
 	  private String nombre;
 	  private int riegoPordia;
@@ -13,8 +15,9 @@ public abstract class AbstractPlant {
 	  private boolean cosecha;
 	  private boolean controlPlaga;
 
-	  //private boolean estado;
-	  private int id;
+	 private String needs;
+	
+
 
 
 
@@ -30,9 +33,7 @@ public abstract class AbstractPlant {
 	    this.abono = true;
 	    this.controlPlaga = true;
 	    this.cosecha = true;
-	    //this.estado = true;
-
-	    this.id = ++idPlantas;
+	    this.needs = "N";
 	}
 	
 	  //Ver detalles de la plantas
@@ -54,7 +55,14 @@ public abstract class AbstractPlant {
 	  
 	  public int getRangoCosecha() {
 		    return this.cosechaRango;
-		  }
+	  }
+	  public String getNeeds() {
+		    return this.needs;
+	  }
+	  
+	  public void setNeeds(String need) {
+		    this.needs = need;
+	  }
 
 	  //Ver estado del cuidado de la planta
 	  public boolean getRiego() {

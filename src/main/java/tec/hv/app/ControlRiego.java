@@ -25,7 +25,7 @@ public class ControlRiego extends Thread {
           
          
           System.out.println("Hora de regar: " + plantas.get(i).getNombre());
-          controlador.echarUno();
+          //controlador.echarUno();
         }
 
         i++;

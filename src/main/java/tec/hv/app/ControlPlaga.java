@@ -9,7 +9,8 @@ public class ControlPlaga extends Thread {
   int time;
   int day;
 
-  int plagaDay = r.nextInt(2)+1;
+  //int plagaDay = r.nextInt(2)+1;
+  int plagaDay = 2;
   int infectada;
   Controller controlador;
   
@@ -29,8 +30,9 @@ public class ControlPlaga extends Thread {
       
           if (day % plagaDay==0 && plantas.get(infectada).getControlPlaga() == true && day!=1) {
         	  plantas.get(infectada).eliminarPlaga(false);
-
-        	  if (infectada == 0){
+        	if(!"P".contains(plantas.get(infectada).getNeeds())) {
+        	
+        	if (infectada == 0){
         	    controlador.activarPlaga_PLANTA_UNO();
               }
             if (infectada == 1){
@@ -40,7 +42,9 @@ public class ControlPlaga extends Thread {
               controlador.activarPlaga_PLANTA_TRES();
             }
         	  System.out.println("Se infect�: " + plantas.get(infectada).getNombre());
-         
+        	 plantas.get(infectada).setNeeds(plantas.get(infectada).getNeeds()+"P");
+        	  
+        	}
         }
       
       
