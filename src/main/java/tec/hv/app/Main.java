@@ -13,8 +13,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("huerta.fxml")));
-            primaryStage.setTitle("Clase de P.O.O");
-            Scene scene = new Scene(root, 350, 400);
+            primaryStage.setTitle("Huerta virtual");
+            primaryStage.setResizable(false);
+            Scene scene = new Scene(root, 1160, 650);
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {
