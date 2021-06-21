@@ -21,10 +21,12 @@ public class ControlCosecha extends Thread {
 
 	    	 
 	    	//  System.out.println("Cosechaa");
-	        if ((day % plantas.get(i).getRangoCosecha()) == 0 && plantas.get(i).getCosecha() == true) {
-	          plantas.get(i).cosechar(false);
-	          System.out.println("Dia de cosecha: " + plantas.get(i).getNombre() +" Dia: "+day);
-	        }
+	        
+	    	  if ((day % plantas.get(i).getRangoCosecha()) == 0 && plantas.get(i).getCosecha() == true) {
+	    		  	
+	    		  	plantas.get(i).cosechar(false);
+	    		  	System.out.println("Dia de cosecha: " + plantas.get(i).getNombre() +" Dia: "+day);
+	    	  }
 
 	        i++;
 

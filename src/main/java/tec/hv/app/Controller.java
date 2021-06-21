@@ -145,11 +145,13 @@ public class Controller {
     }
 
     public void quitarPlaga_PLANTA_DOS(ActionEvent actionEvent) {
-        insecto1_PLANTA_DOS.setVisible(false);
+        
+    	insecto1_PLANTA_DOS.setVisible(false);
         insecto2_PLANTA_DOS.setVisible(false);
         insecto3_PLANTA_DOS.setVisible(false);
         alertaPlaga_PLANTA_DOS.setVisible(false);
         plantas.get(1).eliminarPlaga(true);
+        
     }
 
     public void echarAbono_PLANTA_DOS(ActionEvent actionEvent) {
@@ -249,8 +251,9 @@ public class Controller {
 
 
     // Muestra la alerta de cosecha y sus respectivos frutos
-    public void mostrarCosecha(int poscion, String tipo){
+   public void mostrarCosecha(int poscion, String tipo){
         switch (poscion){
+        
             case 1: // Posicion 1
                 if (tipo == ""){ // Orquidea
                     orchid1_PLANTA_UNO.setVisible(true);

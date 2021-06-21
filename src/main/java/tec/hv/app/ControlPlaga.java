@@ -29,30 +29,27 @@ public class ControlPlaga extends Thread {
 
       
           if (day % plagaDay==0 && plantas.get(infectada).getControlPlaga() == true && day!=1) {
-        	  plantas.get(infectada).eliminarPlaga(false);
-        	if(!"P".contains(plantas.get(infectada).getNeeds())) {
-        	
-        	if (infectada == 0){
-        	    controlador.activarPlaga_PLANTA_UNO();
-              }
-            if (infectada == 1){
-              controlador.activarPlaga_PLANTA_DOS();
-            }
-            if (infectada == 2){
-              controlador.activarPlaga_PLANTA_TRES();
-            }
-        	  System.out.println("Se infect�: " + plantas.get(infectada).getNombre());
-        	 plantas.get(infectada).setNeeds(plantas.get(infectada).getNeeds()+"P");
         	  
+        	 
+        	String pl = plantas.get(infectada).getNeeds();
+        	if(pl.contains("P") == false) {
+        		
+        		 plantas.get(infectada).eliminarPlaga(false);
+	        	
+        		 if (infectada == 0){
+	        	    controlador.activarPlaga_PLANTA_UNO();
+	              }
+	            if (infectada == 1){
+	              controlador.activarPlaga_PLANTA_DOS();
+	            }
+	            if (infectada == 2){
+	              controlador.activarPlaga_PLANTA_TRES();
+	            }
+	        	  
+	        	 plantas.get(infectada).setNeeds(plantas.get(infectada).getNeeds()+"P");
+	        	 System.out.println("Se infecto: " + plantas.get(infectada).getNombre()+" N: " + plantas.get(infectada).getNeeds());
         	}
         }
-      
-      
-      //if (time == 45) {
-        //time = 0;
-       //day++;
-      
-      //}
       
       try {
         ControlPlaga.sleep(1000);
