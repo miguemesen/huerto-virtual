@@ -16,7 +16,7 @@ public class ControlCosecha extends Thread {
 	  }
 
 	  public void run() {
-	    while (time!=30) {
+	    while (time!=20) {
 	      int i = 0;
 	      time++;
 	      while (i < plantas.size()) {
@@ -27,14 +27,10 @@ public class ControlCosecha extends Thread {
 	    	  if ((day % plantas.get(i).getRangoCosecha()) == 0 && plantas.get(i).getCosecha() == true) {
 	    		  	
 	    		  	String pl = plantas.get(i).getNeeds();
-	    		  	
 	            	if(pl.contains("C") == false) {
 	            		System.out.println("Dia de cosecha: " + plantas.get(i).getNombre() +" Dia: "+day);
-	            		
 	            		plantas.get(i).cosechar(false);
-	            	
 	            		controlador.mostrarCosecha(i, plantas.get(i).getTipo()); 
-	            		
 	            		plantas.get(i).setNeeds(plantas.get(i).getNeeds()+"C");
 	            		
 	            	}

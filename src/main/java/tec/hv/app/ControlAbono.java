@@ -14,7 +14,7 @@ public class ControlAbono extends Thread{
   }
 
   public void run() {
-    while (time!=30) {
+    while (time!=20) {
       int i = 0;
       time++;
       

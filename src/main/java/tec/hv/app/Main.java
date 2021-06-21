@@ -11,13 +11,16 @@ import java.util.Objects;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
+    	
         try {
+        	
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("startScreen.fxml")));
             primaryStage.setTitle("Huerta virtual");
             Scene scene = new Scene(root, 713, 400);
             primaryStage.setResizable(false);
             primaryStage.setScene(scene);
             primaryStage.show();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
