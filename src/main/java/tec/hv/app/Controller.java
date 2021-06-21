@@ -15,6 +15,7 @@ import java.util.Objects;
 
 public class Controller {
 
+
     // PLANTA UNO
     public ImageView alertaCosecha_PLANTA_UNO;
     public ImageView orchid3_PLANTA_UNO;
@@ -126,52 +127,21 @@ public class Controller {
         alertaPlaga_PLANTA_UNO.setVisible(true);
     }
 
-    public void activarTomate_PLANTA_UNO(ActionEvent actionEvent) {
-        tomato1_PLANTA_UNO.setVisible(true);
-        tomato2_PLANTA_UNO.setVisible(true);
-        tomato3_PLANTA_UNO.setVisible(true);
-        alertaCosecha_PLANTA_UNO.setVisible(true);
-    }
 
-    public void activarOrquidea_PLANTA_UNO(ActionEvent actionEvent) {
-        orchid1_PLANTA_UNO.setVisible(true);
-        orchid2_PLANTA_UNO.setVisible(true);
-        orchid3_PLANTA_UNO.setVisible(true);
-        alertaCosecha_PLANTA_UNO.setVisible(true);
-    }
-
-    public void alertaPlaga_PLANTA_UNO(ActionEvent actionEvent) {
-        alertaPlaga_PLANTA_UNO.setVisible(true);
-    }
-
-    public void alertaAbono_PLANTA_UNO(ActionEvent actionEvent) {
+    public void alertaAbono_PLANTA_UNO() {
         alertaAbono_PLANTA_UNO.setVisible(true);
     }
 
-    public void alertaCosecha_PLANTA_UNO(ActionEvent actionEvent) {
-        alertaCosecha_PLANTA_UNO.setVisible(true);
-    }
-
-    public void alertaAgua_PLANTA_UNO(ActionEvent actionEvent) {
+    public void alertaAgua_PLANTA_UNO() {
         alertaAgua_PLANTA_UNO.setVisible(true);
     }
-
-    public void plantaBrocoli_PLANTA_UNO(ActionEvent actionEvent) {
-        plantaBrocoli_PLANTA_UNO.setVisible(true);
-        plantaNormal_PLANTA_UNO.setVisible(false);
-    }
-
-    public void plantaNormal_PLANTA_UNO(ActionEvent actionEvent) {
-        plantaBrocoli_PLANTA_UNO.setVisible(false);
-        plantaNormal_PLANTA_UNO.setVisible(true);
-    }
-
 
 
     // METODOS PLANTA DOS
 
     public void echarAgua_PLANTA_DOS(ActionEvent actionEvent) {
         alertaAgua_PLANTA_DOS.setVisible(false);
+        plantas.get(1).regar(true);
     }
 
     public void quitarPlaga_PLANTA_DOS(ActionEvent actionEvent) {
@@ -179,10 +149,12 @@ public class Controller {
         insecto2_PLANTA_DOS.setVisible(false);
         insecto3_PLANTA_DOS.setVisible(false);
         alertaPlaga_PLANTA_DOS.setVisible(false);
+        plantas.get(1).eliminarPlaga(true);
     }
 
     public void echarAbono_PLANTA_DOS(ActionEvent actionEvent) {
         alertaAbono_PLANTA_DOS.setVisible(false);
+        plantas.get(1).abonar(true);
     }
 
     public void cosechar_PLANTA_DOS(ActionEvent actionEvent) {
@@ -193,6 +165,7 @@ public class Controller {
         tomato2_PLANTA_DOS.setVisible(false);
         tomato3_PLANTA_DOS.setVisible(false);
         alertaCosecha_PLANTA_DOS.setVisible(false);
+        plantas.get(1).cosechar(true);
     }
 
     public void activarPlaga_PLANTA_DOS() {
@@ -202,50 +175,20 @@ public class Controller {
         alertaPlaga_PLANTA_DOS.setVisible(true);
     }
 
-    public void activarTomate_PLANTA_DOS(ActionEvent actionEvent) {
-        tomato1_PLANTA_DOS.setVisible(true);
-        tomato2_PLANTA_DOS.setVisible(true);
-        tomato3_PLANTA_DOS.setVisible(true);
-        alertaCosecha_PLANTA_DOS.setVisible(true);
-    }
 
-    public void activarOrquidea_PLANTA_DOS(ActionEvent actionEvent) {
-        orchid1_PLANTA_DOS.setVisible(true);
-        orchid2_PLANTA_DOS.setVisible(true);
-        orchid3_PLANTA_DOS.setVisible(true);
-        alertaCosecha_PLANTA_DOS.setVisible(true);
-    }
-
-    public void alertaPlaga_PLANTA_DOS(ActionEvent actionEvent) {
-        alertaPlaga_PLANTA_DOS.setVisible(true);
-    }
-
-    public void alertaAbono_PLANTA_DOS(ActionEvent actionEvent) {
+    public void alertaAbono_PLANTA_DOS() {
         alertaAbono_PLANTA_DOS.setVisible(true);
     }
 
-    public void alertaCosecha_PLANTA_DOS(ActionEvent actionEvent) {
-        alertaCosecha_PLANTA_DOS.setVisible(true);
-    }
-
-    public void alertaAgua_PLANTA_DOS(ActionEvent actionEvent) {
+    public void alertaAgua_PLANTA_DOS() {
         alertaAgua_PLANTA_DOS.setVisible(true);
-    }
-
-    public void plantaBrocoli_PLANTA_DOS(ActionEvent actionEvent) {
-        plantaBrocoli_PLANTA_DOS.setVisible(true);
-        plantaNormal_PLANTA_DOS.setVisible(false);
-    }
-
-    public void plantaNormal_PLANTA_DOS(ActionEvent actionEvent) {
-        plantaBrocoli_PLANTA_DOS.setVisible(false);
-        plantaNormal_PLANTA_DOS.setVisible(true);
     }
 
 
     // METODOS PLANTA TRES
     public void echarAgua_PLANTA_TRES(ActionEvent actionEvent) {
         alertaAgua_PLANTA_TRES.setVisible(false);
+        plantas.get(2).regar(true);
     }
 
     public void quitarPlaga_PLANTA_TRES(ActionEvent actionEvent) {
@@ -253,10 +196,12 @@ public class Controller {
         insecto2_PLANTA_TRES.setVisible(false);
         insecto3_PLANTA_TRES.setVisible(false);
         alertaPlaga_PLANTA_TRES.setVisible(false);
+        plantas.get(2).eliminarPlaga(true);
     }
 
     public void echarAbono_PLANTA_TRES(ActionEvent actionEvent) {
         alertaAbono_PLANTA_TRES.setVisible(false);
+        plantas.get(2).abonar(true);
     }
 
     public void cosechar_PLANTA_TRES(ActionEvent actionEvent) {
@@ -267,7 +212,7 @@ public class Controller {
         tomato2_PLANTA_TRES.setVisible(false);
         tomato3_PLANTA_TRES.setVisible(false);
         alertaCosecha_PLANTA_TRES.setVisible(false);
-
+        plantas.get(2).cosechar(true);
     }
 
     public void activarPlaga_PLANTA_TRES() {
@@ -277,44 +222,13 @@ public class Controller {
         alertaPlaga_PLANTA_TRES.setVisible(true);
     }
 
-    public void activarTomate_PLANTA_TRES(ActionEvent actionEvent) {
-        tomato1_PLANTA_TRES.setVisible(true);
-        tomato2_PLANTA_TRES.setVisible(true);
-        tomato3_PLANTA_TRES.setVisible(true);
-        alertaCosecha_PLANTA_TRES.setVisible(true);
-    }
 
-    public void activarOrquidea_PLANTA_TRES(ActionEvent actionEvent) {
-        orchid1_PLANTA_TRES.setVisible(true);
-        orchid2_PLANTA_TRES.setVisible(true);
-        orchid3_PLANTA_TRES.setVisible(true);
-        alertaCosecha_PLANTA_TRES.setVisible(true);
-    }
-
-    public void alertaPlaga_PLANTA_TRES(ActionEvent actionEvent) {
-        alertaPlaga_PLANTA_TRES.setVisible(true);
-    }
-
-    public void alertaAbono_PLANTA_TRES(ActionEvent actionEvent) {
+    public void alertaAbono_PLANTA_TRES() {
         alertaAbono_PLANTA_TRES.setVisible(true);
     }
 
-    public void alertaCosecha_PLANTA_TRES(ActionEvent actionEvent) {
-        alertaCosecha_PLANTA_TRES.setVisible(true);
-    }
-
-    public void alertaAgua_PLANTA_TRES(ActionEvent actionEvent) {
+    public void alertaAgua_PLANTA_TRES() {
         alertaAgua_PLANTA_TRES.setVisible(true);
-    }
-
-    public void plantaBrocoli_PLANTA_TRES(ActionEvent actionEvent) {
-        plantaBrocoli_PLANTA_TRES.setVisible(true);
-        plantaNormal_PLANTA_TRES.setVisible(false);
-    }
-
-    public void plantaNormal_PLANTA_TRES(ActionEvent actionEvent) {
-        plantaBrocoli_PLANTA_TRES.setVisible(false);
-        plantaNormal_PLANTA_TRES.setVisible(true);
     }
 
     public void gameOver(ActionEvent actionEvent) {
@@ -330,6 +244,63 @@ public class Controller {
             mainMenuStage.show();
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+
+    // Muestra la alerta de cosecha y sus respectivos frutos
+    public void mostrarCosecha(int poscion, String tipo){
+        switch (poscion){
+            case 1: // Posicion 1
+                if (tipo == ""){ // Orquidea
+                    orchid1_PLANTA_UNO.setVisible(true);
+                    orchid2_PLANTA_UNO.setVisible(true);
+                    orchid3_PLANTA_UNO.setVisible(true);
+                    alertaCosecha_PLANTA_UNO.setVisible(true);
+                }
+                if (tipo == ""){ // Tomate
+                    tomato1_PLANTA_UNO.setVisible(true);
+                    tomato2_PLANTA_UNO.setVisible(true);
+                    tomato3_PLANTA_UNO.setVisible(true);
+                    alertaCosecha_PLANTA_UNO.setVisible(true);
+                }
+                if (tipo == ""){ // Brocoli
+                    alertaCosecha_PLANTA_UNO.setVisible(true);
+                }
+
+            case 2: // Posicion 2
+                if (tipo == ""){ // Orquidea
+                    orchid1_PLANTA_DOS.setVisible(true);
+                    orchid2_PLANTA_DOS.setVisible(true);
+                    orchid3_PLANTA_DOS.setVisible(true);
+                    alertaCosecha_PLANTA_DOS.setVisible(true);
+                }
+                if (tipo == ""){ // Tomate
+                    tomato1_PLANTA_DOS.setVisible(true);
+                    tomato2_PLANTA_DOS.setVisible(true);
+                    tomato3_PLANTA_DOS.setVisible(true);
+                    alertaCosecha_PLANTA_DOS.setVisible(true);
+                }
+                if (tipo == ""){ // Brocoli
+                    alertaCosecha_PLANTA_DOS.setVisible(true);
+                }
+
+            case 3: // Posicion 3
+                if (tipo == ""){ // Orquidea
+                    orchid1_PLANTA_TRES.setVisible(true);
+                    orchid2_PLANTA_TRES.setVisible(true);
+                    orchid3_PLANTA_TRES.setVisible(true);
+                    alertaCosecha_PLANTA_TRES.setVisible(true);
+                }
+                if (tipo == ""){ // Tomate
+                    tomato1_PLANTA_TRES.setVisible(true);
+                    tomato2_PLANTA_TRES.setVisible(true);
+                    tomato3_PLANTA_TRES.setVisible(true);
+                    alertaCosecha_PLANTA_TRES.setVisible(true);
+                }
+                if (tipo == ""){ // Brocoli
+                    alertaCosecha_PLANTA_TRES.setVisible(true);
+                }
         }
     }
 
