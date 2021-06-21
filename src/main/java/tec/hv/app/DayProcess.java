@@ -56,12 +56,12 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
       System.out.println("Error en el hilo4 " + e);
     }
    
-    try {
-		hiloCosecha.join();
-	} catch (InterruptedException e) {
+    //try {
+	//	hiloCosecha.join();
+	//} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+//		e.printStackTrace();
+	//}
     
     analisis();
     

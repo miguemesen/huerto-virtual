@@ -18,7 +18,7 @@ public class ControlRiego extends Thread {
       time++;
       while (i < plantas.size()) {
 
-      //  System.out.println("Regar: " + time);
+        System.out.println("Regar: " + time);
 
         if ((time % (plantas.get(i).getRiegoxDia())) == 0 && plantas.get(i).getRiego() == true && time <= 39) {
           plantas.get(i).regar(false);
