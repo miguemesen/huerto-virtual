@@ -290,21 +290,6 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-      
-      
-            <Pane layoutX="-38.0" layoutY="67.0" prefHeight="231.0" prefWidth="105.0">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_DOS" text="Activiar Plaga" />
-                  <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_DOS" text="Activar Tomate" />
-                  <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_DOS" text="Activiar Orquidea" />
-                  <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_DOS" text="Alerta Plaga" />
-                  <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_DOS" text="Alerta Abono" />
-                  <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_DOS" text="Alerta Cosecha" />
-                  <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_DOS" text="Alerta Agua" />
-                  <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_DOS" text="brocoli" />
-                  <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_DOS" text="plantaNormal" />
-               </children>
-            </Pane>
          </children>
       </Pane>
 
@@ -432,20 +417,6 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-      
-            <Pane layoutX="-52.0" layoutY="55.0" prefHeight="231.0" prefWidth="105.0">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_TRES" text="Activiar Plaga" />
-                  <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_TRES" text="Activar Tomate" />
-                  <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_TRES" text="Activiar Orquidea" />
-                  <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_TRES" text="Alerta Plaga" />
-                  <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_TRES" text="Alerta Abono" />
-                  <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_TRES" text="Alerta Cosecha" />
-                  <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_TRES" text="Alerta Agua" />
-                  <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_TRES" text="brocoli" />
-                  <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_TRES" text="plantaNormal" />
-               </children>
-            </Pane>
             <ImageView fitHeight="45.0" fitWidth="118.0" layoutX="145.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@score.png" />
