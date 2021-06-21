@@ -23,7 +23,7 @@ public class ControlPlaga extends Thread {
 
   public void run() {
 	
-    while (time!=45) {
+    while (time!=30) {
   //  System.out.println("rplaga: "+plagaDay);
       time++;
 

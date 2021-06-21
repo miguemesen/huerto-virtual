@@ -14,7 +14,7 @@ public class ControlCosecha extends Thread {
 	  }
 
 	  public void run() {
-	    while (time!=45) {
+	    while (time!=30) {
 	      int i = 0;
 	      time++;
 	      while (i < plantas.size()) {
