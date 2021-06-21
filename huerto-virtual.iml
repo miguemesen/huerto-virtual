@@ -18,5 +18,8 @@
     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:mac:15.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:17-ea+11" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:mac-aarch64:17-ea+11" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.12.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.12.3" level="project" />
   </component>
 </module>
