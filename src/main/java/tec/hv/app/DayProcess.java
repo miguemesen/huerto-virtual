@@ -10,8 +10,10 @@ public class DayProcess {
   ArrayList < PlantCreator > plantas;
   Player jugador;
   Controller controlador;
-
-
+  ControlRiego hiloRiego;
+  ControlAbono hiloAbono;
+  ControlPlaga hiloPlaga;
+  ControlCosecha hiloCosecha;
 @SuppressWarnings("deprecation")
 
 public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Controller controlador) {
@@ -19,10 +21,10 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
 	this.jugador=player;
     this.controlador=controlador;
    
-    ControlRiego hiloRiego = new ControlRiego(plantas,controlador);
-    ControlAbono hiloAbono = new ControlAbono(plantas,dias,controlador);
-    ControlPlaga hiloPlaga = new ControlPlaga(plantas,dias,controlador);
-    ControlCosecha hiloCosecha = new ControlCosecha(plantas,dias,controlador);
+    this.hiloRiego = new ControlRiego(plantas,controlador);
+    this.hiloAbono = new ControlAbono(plantas,dias,controlador);
+    this.hiloPlaga = new ControlPlaga(plantas,dias,controlador);
+    this.hiloCosecha = new ControlCosecha(plantas,dias,controlador);
     
     
     
@@ -33,8 +35,6 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
       System.out.println("Error en el hilo1 " + e);
     }
     
-    
-
     hiloAbono.start();
     try {
       hiloAbono.sleep(10);
@@ -56,12 +56,13 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
       System.out.println("Error en el hilo4 " + e);
     }
    
-    //try {
-	//	hiloCosecha.join();
-	//} catch (InterruptedException e) {
+    
+    try {
+		hiloCosecha.join();
+	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
-//		e.printStackTrace();
-	//}
+		e.printStackTrace();
+	}
     
     analisis();
     
