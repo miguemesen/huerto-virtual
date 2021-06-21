@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.Tooltip;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -71,16 +71,22 @@ public class Controller {
 
 
     public Button gameOverButton;
-
+    public TextField txScore;
+    public TextField txDay;
+    
     ArrayList<PlantCreator> plantas;
+
+    public void setDia(int dia){
+        txDay.setText(String.valueOf(dia));
+    }
+    
+    public void setPuntaje(int puntaje){
+        txScore.setText(String.valueOf(puntaje));
+    }
 
     public void setPlantas(ArrayList<PlantCreator> plantas) {
         this.plantas = plantas;
     }
-
-    // Puntaje
-    public Label scoreLabel;
-
 
 
     // METODOS PLANTA UNO
@@ -316,11 +322,7 @@ public class Controller {
         }
     }
    
-   public void setPuntaje(int nuevoPuntaje) {
-      scoreLabel.setTooltip(new Tooltip("PERRA"));
-	   System.out.println("fuaaaaaa!");
-   }
-
+  
 
 
 

@@ -18,7 +18,7 @@
     },
     {
       "tipo": "CicloCorto",
-      "nombre": "Lechuga", 
+      "nombre": "Brocoli", 
       "riego":1,
       "abono":3,
       "cosecha":3

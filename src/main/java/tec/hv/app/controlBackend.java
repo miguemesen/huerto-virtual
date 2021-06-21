@@ -33,7 +33,7 @@ public class controlBackend extends Thread{
 		}
 
 	    controlador.setPlantas(plantas);
-
+	    controlador.setPuntaje(100);
 	    Player jugador = parser.cargarJugador();
 	    
 	    DayProcess dia = new DayProcess();

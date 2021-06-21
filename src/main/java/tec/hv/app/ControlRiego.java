@@ -27,11 +27,8 @@ public class ControlRiego extends Thread {
           
       	  if(pl.contains("R") == false) {
   			 System.out.println("Hora de regar: " + plantas.get(i).getNombre());
-  			 
   			 plantas.get(i).regar(false);
       		 controlador.alertaRiego(i); 
-      		controlador.setPuntaje(111);
-      		
       		 plantas.get(i).setNeeds(plantas.get(i).getNeeds()+"R");
       		
       	}
@@ -40,9 +37,6 @@ public class ControlRiego extends Thread {
 
         i++;
 
-        //if (time == 45) {
-        //  time = 0;
-       // }
       }
 
       try {
