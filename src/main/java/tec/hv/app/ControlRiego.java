@@ -4,11 +4,12 @@ import java.util.ArrayList;
 public class ControlRiego extends Thread {
 
   ArrayList < PlantCreator > plantas;
+  Controller controlador;
   int time;
 
-  public ControlRiego(ArrayList < PlantCreator > plantasx) {
+  public ControlRiego(ArrayList < PlantCreator > plantasx,Controller controlador) {
     this.plantas = plantasx;
-
+    this.controlador = controlador;
   }
 
   public void run() {
@@ -21,8 +22,10 @@ public class ControlRiego extends Thread {
 
         if ((time % (plantas.get(i).getRiegoxDia())) == 0 && plantas.get(i).getRiego() == true && time <= 39) {
           plantas.get(i).regar(false);
+          
+         
           System.out.println("Hora de regar: " + plantas.get(i).getNombre());
- 
+          controlador.echarUno();
         }
 
         i++;

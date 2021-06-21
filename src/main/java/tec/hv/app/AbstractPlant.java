@@ -13,7 +13,7 @@ public abstract class AbstractPlant {
 	  private boolean cosecha;
 	  private boolean controlPlaga;
 
-	  private boolean estado;
+	  //private boolean estado;
 	  private int id;
 
 
@@ -30,7 +30,7 @@ public abstract class AbstractPlant {
 	    this.abono = true;
 	    this.controlPlaga = true;
 	    this.cosecha = true;
-	    this.estado = true;
+	    //this.estado = true;
 
 	    this.id = ++idPlantas;
 	}
@@ -73,9 +73,9 @@ public abstract class AbstractPlant {
 		    return this.cosecha;
 		  }
 	  
-	  public boolean getEstado() {
-	    return this.estado;
-	  }
+	  //public boolean getEstado() {
+	  //  return this.estado;
+	  //}
 
 	  //Realizar cuidados de las plantas
 	  public void regar(boolean estado) {
@@ -94,8 +94,8 @@ public abstract class AbstractPlant {
 		    this.cosecha = estado;
 	  }
 	  
-	  public void estado(boolean estado) {
-	    this.estado = estado;
-	  }
+	  //public void estado(boolean estado) {
+	  //  this.estado = estado;
+	 // }
 
 }
