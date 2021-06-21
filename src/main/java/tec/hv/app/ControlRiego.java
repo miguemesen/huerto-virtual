@@ -24,8 +24,18 @@ public class ControlRiego extends Thread {
         if ((time % (plantas.get(i).getRiegoxDia())) == 0 && plantas.get(i).getRiego() == true && time <= 25) {
           plantas.get(i).regar(false);
          
-          System.out.println("Hora de regar: " + plantas.get(i).getNombre());
-
+          String pl = plantas.get(i).getNeeds();
+          
+      	  if(pl.contains("R") == false) {
+  			 System.out.println("Hora de regar: " + plantas.get(i).getNombre());
+  			 
+  			 plantas.get(i).regar(false);
+      		 controlador.alertaRiego(i); 
+      		
+      		 plantas.get(i).setNeeds(plantas.get(i).getNeeds()+"R");
+      		
+      	}
+          
         }
 
         i++;
