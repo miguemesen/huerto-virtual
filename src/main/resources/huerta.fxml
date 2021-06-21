@@ -16,7 +16,6 @@
             <Image url="@background.png" />
          </image>
       </ImageView>
-
       <!-- PLANTA UNO __________________________________________________________________________________ -->
 
       <Pane layoutX="111.0" prefHeight="578.0" prefWidth="344.0">

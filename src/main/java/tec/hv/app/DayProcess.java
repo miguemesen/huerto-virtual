@@ -1,10 +1,11 @@
 package tec.hv.app;
 import java.util.ArrayList;
 
-public class DayProcess {
+public class DayProcess extends Thread {
 
  
   int dias=1;
+  int puntaje;
   ArrayList < PlantCreator > plantas;
   Player jugador;
   Controller controlador;
@@ -69,11 +70,11 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
 	  dias++;
 	  System.out.print("Vamos a analizar: "+ dias);
 	  
-	  int puntaje;
-	  int restar=0;
 	  
-	  
+	  int restar=0;  
 	  for (int i=0; i<plantas.size();i++) {	  
+		  
+		  plantas.get(i).setNeeds("N");
 		  
 		  if(plantas.get(i).getRiego()==false) {
 			  restar=restar+5;
@@ -92,10 +93,17 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
 	  
 	  
 	  puntaje = jugador.getPuntaje()-restar;
-	  jugador.setPuntaje(puntaje);
-	 
 	  
+	   
+	  //controlador.setPuntaje(puntaje);
 	  System.out.println("Puntos: "+puntaje);
+	  
+	  //controlAnalisis hiloPuntos = new controlAnalisis(controlador,puntaje);
+	  
+	  //hiloPuntos.start();
+	  
+	
+	  
 	  if (puntaje>=5) {
 	  iniciarDia(plantas,jugador,controlador); 
 	  }
@@ -115,7 +123,8 @@ public void finalizar() {
 	System.out.println("Fin del juego");
 		  
 	  }
-	  
+	 
+
  }
   
   

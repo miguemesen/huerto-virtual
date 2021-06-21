@@ -13,7 +13,7 @@ public class ControlRiego extends Thread {
   }
 
   public void run() {
-    while (time!=20) {
+    while (time!=30) {
       int i = 0;
       time++;
       System.out.println("Regar: " + time);
@@ -22,8 +22,7 @@ public class ControlRiego extends Thread {
       
 
         if ((time % (plantas.get(i).getRiegoxDia())) == 0 && plantas.get(i).getRiego() == true && time <= 25) {
-          plantas.get(i).regar(false);
-         
+          
           String pl = plantas.get(i).getNeeds();
           
       	  if(pl.contains("R") == false) {
@@ -31,6 +30,7 @@ public class ControlRiego extends Thread {
   			 
   			 plantas.get(i).regar(false);
       		 controlador.alertaRiego(i); 
+      		controlador.setPuntaje(111);
       		
       		 plantas.get(i).setNeeds(plantas.get(i).getNeeds()+"R");
       		

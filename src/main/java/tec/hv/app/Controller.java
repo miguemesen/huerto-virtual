@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -80,9 +81,6 @@ public class Controller {
     // Puntaje
     public Label scoreLabel;
 
-    public void setPuntaje(int nuevoPuntaje) {
-        scoreLabel.setText(String.valueOf(nuevoPuntaje));
-    }
 
 
     // METODOS PLANTA UNO
@@ -259,6 +257,7 @@ public class Controller {
 	   			
             case 0: // Posicion 1
                 if (tipo.equals("Ornamental")){ // Orquidea
+                	
                 	orchid1_PLANTA_UNO.setVisible(true);
                     orchid2_PLANTA_UNO.setVisible(true);
                     orchid3_PLANTA_UNO.setVisible(true);
@@ -316,6 +315,12 @@ public class Controller {
                 break;
         }
     }
+   
+   public void setPuntaje(int nuevoPuntaje) {
+      scoreLabel.setTooltip(new Tooltip("PERRA"));
+	   System.out.println("fuaaaaaa!");
+   }
+
 
 
 
