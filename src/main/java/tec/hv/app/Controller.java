@@ -79,12 +79,8 @@ public class Controller {
 
     // Puntaje
     public Label scoreLabel;
-    public Button bajarPuntosButton;
 
-    public void bajarPuntos(ActionEvent actionEvent) {
-        System.out.println("Entra");
-        int puntaje = Integer.parseInt(scoreLabel.getText());
-        int nuevoPuntaje = puntaje-15;
+    public void setPuntaje(int nuevoPuntaje) {
         scoreLabel.setText(String.valueOf(nuevoPuntaje));
     }
 
@@ -210,9 +206,6 @@ public class Controller {
         insecto3_PLANTA_TRES.setVisible(true);
         alertaPlaga_PLANTA_TRES.setVisible(true);
     }
-
-
-
 
 
 
