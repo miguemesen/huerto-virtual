@@ -145,12 +145,17 @@
                   <Font name="Franklin Gothic Book" size="28.0" />
                </font>
             </TextField>
-            <TextField fx:id="nombre_PLANTA_UNO" layoutX="53.0" layoutY="394.0" />
-            <TextField fx:id="nombrePersona" layoutX="-105.0" layoutY="80.0">
+            <TextField fx:id="nombre_PLANTA_UNO" editable="false" layoutX="53.0" layoutY="394.0" />
+            <TextField fx:id="nombrePersona" editable="false" layoutX="-105.0" layoutY="80.0">
                <font>
                   <Font size="15.0" />
                </font>
             </TextField>
+            <Label layoutX="307.0" layoutY="5.0" text="Día:">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
       
       
       
@@ -282,17 +287,17 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-            <Label layoutX="22.0" layoutY="9.0" text="Día:">
-               <font>
-                  <Font size="42.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txDay" editable="false" layoutX="99.0" layoutY="14.0" prefHeight="39.0" prefWidth="69.0">
+            <TextField fx:id="txDay" editable="false" layoutX="37.0" layoutY="10.0" prefHeight="39.0" prefWidth="69.0">
                <font>
                   <Font name="Franklin Gothic Book" size="28.0" />
                </font>
             </TextField>
-            <TextField fx:id="nombre_PLANTA_DOS" layoutX="63.0" layoutY="396.0" />
+            <TextField fx:id="nombre_PLANTA_DOS" editable="false" layoutX="63.0" layoutY="396.0" />
+            <TextField editable="false" layoutX="121.0" layoutY="16.0" prefHeight="39.0" prefWidth="57.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
          </children>
       </Pane>
 
@@ -420,7 +425,7 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-            <TextField fx:id="nombre_PLANTA_TRES" layoutX="63.0" layoutY="397.0" />
+            <TextField fx:id="nombre_PLANTA_TRES" editable="false" layoutX="63.0" layoutY="397.0" />
          </children>
       </Pane>
       <Button fx:id="gameOverButton" layoutX="991.0" layoutY="598.0" mnemonicParsing="false" onAction="#gameOver" prefHeight="35.0" prefWidth="133.0">
