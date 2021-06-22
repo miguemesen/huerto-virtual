@@ -6,6 +6,7 @@ public class ControlCosecha extends Thread {
 	  ArrayList <PlantCreator > plantas;
 	  int time;
 	  int day;
+
 	  
 	  public ControlCosecha(ArrayList < PlantCreator > plantasx,int dia,Controller controlador) {
 	    this.plantas = plantasx;

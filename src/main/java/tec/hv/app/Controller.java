@@ -325,4 +325,12 @@ public class Controller {
         }
     }
 
+    public void alertaPlaga(int tipo){
+        switch (tipo){
+            case 1: //
+
+        }
+    }
+
+
 }
