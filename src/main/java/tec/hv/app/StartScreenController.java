@@ -19,7 +19,7 @@ public class StartScreenController {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/huerta.fxml"));
             Parent root = loader.load();
-
+            Controller controller = loader.getController();
 
             Stage gameStage = new Stage();
             gameStage.setTitle("Huerta virtual");
@@ -27,6 +27,10 @@ public class StartScreenController {
             Scene scene = new Scene(root, 1136, 650);
             gameStage.setScene(scene);
             gameStage.show();
+            
+            controlBackend back = new controlBackend(controller);
+            back.start();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
