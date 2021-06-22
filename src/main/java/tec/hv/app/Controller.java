@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -78,9 +79,18 @@ public class Controller {
     public TextField nombrePersona;
     public TextField nombre_PLANTA_DOS;
     public TextField nombre_PLANTA_TRES;
-
     ArrayList<PlantCreator> plantas;
 
+    
+    public void gameOver() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+	    alert.setHeaderText(null);
+	    alert.setTitle("Gamer Over");
+	    alert.setContentText("Haz descuiado tus plantas...");
+	    alert.showAndWait();
+    	System.out.println("FINIS!");
+    }
+    
     public void setNombrePlanta(int posicion,String nombre){
     	
     	if (posicion == 0){
