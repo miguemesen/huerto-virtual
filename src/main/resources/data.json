@@ -14,7 +14,7 @@
       "nombre": "Tomate",
       "riego":2,
       "abono":2,
-      "cosecha":3
+      "cosecha":1
     },
     {
       "tipo": "CicloCorto",
@@ -29,13 +29,6 @@
       "riego":1,
       "abono":3,
       "cosecha":3
-    },
-     {
-      "tipo": "Ornamental2", 
-      "nombre": "Lirio",
-      "riego":1,
-      "abono":3,
-      "cosecha":0
     }
     
   ]
