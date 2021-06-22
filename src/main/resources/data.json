@@ -18,7 +18,7 @@
     },
     {
       "tipo": "CicloCorto",
-      "nombre": "Brocoli", 
+      "nombre": "Brocoli",
       "riego":3,
       "abono":3,
       "cosecha":1
