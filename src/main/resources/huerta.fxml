@@ -150,20 +150,7 @@
       
       
             <!-- Comentario -->
-      
-            <Pane layoutX="-105.0" layoutY="84.0" prefHeight="231.0" prefWidth="105.0">
-               <children>
-                  <Button mnemonicParsing="false" onAction="#activarPlaga_PLANTA_UNO" text="Activiar Plaga" />
-                  <Button layoutY="75.0" mnemonicParsing="false" onAction="#activarTomate_PLANTA_UNO" text="Activar Tomate" />
-                  <Button layoutY="25.0" mnemonicParsing="false" onAction="#activarOrquidea_PLANTA_UNO" text="Activiar Orquidea" />
-                  <Button layoutY="50.0" mnemonicParsing="false" onAction="#alertaPlaga_PLANTA_UNO" text="Alerta Plaga" />
-                  <Button layoutY="100.0" mnemonicParsing="false" onAction="#alertaAbono_PLANTA_UNO" text="Alerta Abono" />
-                  <Button layoutY="125.0" mnemonicParsing="false" onAction="#alertaCosecha_PLANTA_UNO" text="Alerta Cosecha" />
-                  <Button layoutY="150.0" mnemonicParsing="false" onAction="#alertaAgua_PLANTA_UNO" text="Alerta Agua" />
-                  <Button layoutY="175.0" mnemonicParsing="false" onAction="#plantaBrocoli_PLANTA_UNO" text="brocoli" />
-                  <Button layoutY="200.0" mnemonicParsing="false" onAction="#plantaNormal_PLANTA_UNO" text="plantaNormal" />
-               </children>
-            </Pane>
+
          </children>
       </Pane>
 
