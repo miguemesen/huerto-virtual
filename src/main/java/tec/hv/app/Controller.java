@@ -80,7 +80,7 @@ public class Controller {
     // Puntaje
     public Label scoreLabel;
 
-    public void bajarPuntos(int nuevoPuntaje) {
+    public void setPuntaje(int nuevoPuntaje) {
         scoreLabel.setText(String.valueOf(nuevoPuntaje));
     }
 
