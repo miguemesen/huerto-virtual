@@ -10,6 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Controller {
@@ -65,8 +66,15 @@ public class Controller {
     public ImageView alertaCosecha_PLANTA_TRES;
     public ImageView alertaPlaga_PLANTA_TRES;
     public ImageView tomato3_PLANTA_TRES;
+
+
     public Button gameOverButton;
 
+    ArrayList<PlantCreator> plantas;
+
+    public void setPlantas(ArrayList<PlantCreator> plantas) {
+        this.plantas = plantas;
+    }
 
     // Puntaje
     public Label scoreLabel;
@@ -81,13 +89,10 @@ public class Controller {
 
 
     // METODOS PLANTA UNO
-   
-    public void echarUno() {
-    	 alertaAgua_PLANTA_UNO.setVisible(true);
-    }
     
     public void echarAgua_PLANTA_UNO(ActionEvent actionEvent) {
         alertaAgua_PLANTA_UNO.setVisible(false);
+        plantas.get(0).regar(true);
     }
     
     public void quitarPlaga_PLANTA_UNO(ActionEvent actionEvent) {
@@ -95,11 +100,12 @@ public class Controller {
         insecto2_PLANTA_UNO.setVisible(false);
         insecto3_PLANTA_UNO.setVisible(false);
         alertaPlaga_PLANTA_UNO.setVisible(false);
-
+        plantas.get(0).eliminarPlaga(true);
     }
 
     public void echarAbono_PLANTA_UNO(ActionEvent actionEvent) {
         alertaAbono_PLANTA_UNO.setVisible(false);
+        plantas.get(0).abonar(true);
     }
 
     public void cosechar_PLANTA_UNO(ActionEvent actionEvent) {
@@ -110,9 +116,10 @@ public class Controller {
         tomato2_PLANTA_UNO.setVisible(false);
         tomato3_PLANTA_UNO.setVisible(false);
         alertaCosecha_PLANTA_UNO.setVisible(false);
+        plantas.get(0).cosechar(true);
     }
 
-    public void activarPlaga_PLANTA_UNO(ActionEvent actionEvent) {
+    public void activarPlaga_PLANTA_UNO() {
         insecto1_PLANTA_UNO.setVisible(true);
         insecto2_PLANTA_UNO.setVisible(true);
         insecto3_PLANTA_UNO.setVisible(true);
@@ -188,7 +195,7 @@ public class Controller {
         alertaCosecha_PLANTA_DOS.setVisible(false);
     }
 
-    public void activarPlaga_PLANTA_DOS(ActionEvent actionEvent) {
+    public void activarPlaga_PLANTA_DOS() {
         insecto1_PLANTA_DOS.setVisible(true);
         insecto2_PLANTA_DOS.setVisible(true);
         insecto3_PLANTA_DOS.setVisible(true);
@@ -260,9 +267,10 @@ public class Controller {
         tomato2_PLANTA_TRES.setVisible(false);
         tomato3_PLANTA_TRES.setVisible(false);
         alertaCosecha_PLANTA_TRES.setVisible(false);
+
     }
 
-    public void activarPlaga_PLANTA_TRES(ActionEvent actionEvent) {
+    public void activarPlaga_PLANTA_TRES() {
         insecto1_PLANTA_TRES.setVisible(true);
         insecto2_PLANTA_TRES.setVisible(true);
         insecto3_PLANTA_TRES.setVisible(true);
@@ -325,12 +333,7 @@ public class Controller {
         }
     }
 
-    public void alertaPlaga(int tipo){
-        switch (tipo){
-            case 1: //
 
-        }
-    }
 
 
 }

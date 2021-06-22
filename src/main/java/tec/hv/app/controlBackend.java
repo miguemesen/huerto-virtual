@@ -32,6 +32,8 @@ public class controlBackend extends Thread{
 			}
 		}
 
+	    controlador.setPlantas(plantas);
+
 	    Player jugador = parser.cargarJugador();
 	    
 	    DayProcess dia = new DayProcess();
