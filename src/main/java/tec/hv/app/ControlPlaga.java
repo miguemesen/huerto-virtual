@@ -13,7 +13,7 @@ public class ControlPlaga extends Thread {
   int infectada;
   
   
-  public ControlPlaga(ArrayList < PlantCreator > plantasx, int dia) {
+  public ControlPlaga(ArrayList < PlantCreator > plantasx, int dia,Controller controlador) {
 	this.day = dia;  
     this.plantas = plantasx;
     this.infectada = r.nextInt(plantas.size());

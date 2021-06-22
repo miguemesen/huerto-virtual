@@ -7,7 +7,7 @@ public class ControlAbono extends Thread{
   int time;
   int day;
   
-  public ControlAbono(ArrayList < PlantCreator > plantasx,int day) {
+  public ControlAbono(ArrayList < PlantCreator > plantasx,int day,Controller controlador) {
     this.plantas = plantasx;
     this.day = day;
 

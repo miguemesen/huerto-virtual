@@ -81,11 +81,15 @@ public class Controller {
 
 
     // METODOS PLANTA UNO
-
+   
+    public void echarUno() {
+    	 alertaAgua_PLANTA_UNO.setVisible(false);
+    }
+    
     public void echarAgua_PLANTA_UNO(ActionEvent actionEvent) {
         alertaAgua_PLANTA_UNO.setVisible(false);
     }
-
+    
     public void quitarPlaga_PLANTA_UNO(ActionEvent actionEvent) {
         insecto1_PLANTA_UNO.setVisible(false);
         insecto2_PLANTA_UNO.setVisible(false);

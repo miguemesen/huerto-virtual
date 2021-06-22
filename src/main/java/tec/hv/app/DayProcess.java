@@ -5,18 +5,26 @@ import java.util.ArrayList;
 
 public class DayProcess {
 
-  int time;
+ 
   int dias=1;
   ArrayList < PlantCreator > plantas;
   Player jugador;
-  public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player) {
-	plantas=plantasx;
-	jugador=player;
-    ControlRiego hiloRiego = new ControlRiego(plantas);
-    ControlAbono hiloAbono = new ControlAbono(plantas,dias);
-    ControlPlaga hiloPlaga = new ControlPlaga(plantas,dias);
-    ControlCosecha hiloCosecha = new ControlCosecha(plantas,dias);
- 
+  Controller controlador;
+
+
+@SuppressWarnings("deprecation")
+
+public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Controller controlador) {
+	this.plantas=plantasx;
+	this.jugador=player;
+    this.controlador=controlador;
+   
+    ControlRiego hiloRiego = new ControlRiego(plantas,controlador);
+    ControlAbono hiloAbono = new ControlAbono(plantas,dias,controlador);
+    ControlPlaga hiloPlaga = new ControlPlaga(plantas,dias,controlador);
+    ControlCosecha hiloCosecha = new ControlCosecha(plantas,dias,controlador);
+    
+    
     
     hiloRiego.start();
     try {
@@ -24,6 +32,8 @@ public class DayProcess {
     } catch (InterruptedException e) {
       System.out.println("Error en el hilo1 " + e);
     }
+    
+    
 
     hiloAbono.start();
     try {
@@ -45,13 +55,13 @@ public class DayProcess {
     } catch (InterruptedException e) {
       System.out.println("Error en el hilo4 " + e);
     }
-    
-    try {
-		hiloCosecha.join();
-	} catch (InterruptedException e) {
+   
+    //try {
+	//	hiloCosecha.join();
+	//} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+//		e.printStackTrace();
+	//}
     
     analisis();
     
@@ -86,15 +96,18 @@ public class DayProcess {
 	  puntaje = jugador.getPuntaje()-restar;
 	  jugador.setPuntaje(puntaje);
 	 
+	  
 	  System.out.println("Puntos: "+puntaje);
 	  if (puntaje>=5) {
-	  iniciarDia(plantas,jugador); 
+	  iniciarDia(plantas,jugador,controlador); 
 	  }
 	  else {
 		  finalizar();
 	  }
   }
-	  public void finalizar() {
+
+
+public void finalizar() {
 		  System.out.println("Fin del juego");
 	  }
 	  

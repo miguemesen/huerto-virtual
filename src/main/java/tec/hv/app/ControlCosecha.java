@@ -7,7 +7,7 @@ public class ControlCosecha extends Thread {
 	  int time;
 	  int day;
 	  
-	  public ControlCosecha(ArrayList < PlantCreator > plantasx,int dia) {
+	  public ControlCosecha(ArrayList < PlantCreator > plantasx,int dia,Controller controlador) {
 	    this.plantas = plantasx;
 	    this.day = dia;
 	  }

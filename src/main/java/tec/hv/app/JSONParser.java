@@ -15,7 +15,7 @@ public class JSONParser {
   private JsonNode nodo;
 
   public JSONParser() {
-    file = new File("resources/data.json");
+    file = new File("src/main/resources/data.json");
     mapper = new ObjectMapper();
 
     try {
