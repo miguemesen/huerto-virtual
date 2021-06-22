@@ -79,12 +79,11 @@ public class Controller {
 
     // Puntaje
     public Label scoreLabel;
-    public Button bajarPuntosButton;
 
-    public void bajarPuntos(ActionEvent actionEvent) {
+    public void bajarPuntos(int puntosPorBajar) {
         System.out.println("Entra");
         int puntaje = Integer.parseInt(scoreLabel.getText());
-        int nuevoPuntaje = puntaje-15;
+        int nuevoPuntaje = puntaje-puntosPorBajar;
         scoreLabel.setText(String.valueOf(nuevoPuntaje));
     }
 
