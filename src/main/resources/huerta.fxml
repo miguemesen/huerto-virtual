@@ -145,6 +145,12 @@
                   <Font name="Franklin Gothic Book" size="28.0" />
                </font>
             </TextField>
+            <TextField fx:id="nombre_PLANTA_UNO" layoutX="53.0" layoutY="394.0" />
+            <TextField fx:id="nombrePersona" layoutX="-105.0" layoutY="80.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
       
       
       
@@ -286,6 +292,7 @@
                   <Font name="Franklin Gothic Book" size="28.0" />
                </font>
             </TextField>
+            <TextField fx:id="nombre_PLANTA_DOS" layoutX="63.0" layoutY="396.0" />
          </children>
       </Pane>
 
@@ -388,22 +395,22 @@
                   <Image url="@Insecto.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaAgua_PLANTA_TRES" fitHeight="96.0" fitWidth="132.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="alertaAgua_PLANTA_TRES" fitHeight="96.0" fitWidth="132.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaAgua.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaAbono_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="alertaAbono_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaAbono.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaCosecha_PLANTA_TRES" fitHeight="96.0" fitWidth="136.0" layoutX="170.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="alertaCosecha_PLANTA_TRES" fitHeight="96.0" fitWidth="136.0" layoutX="170.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaCosecha.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaPlaga_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="175.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="alertaPlaga_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="175.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaPlaga.png" />
                </image>
@@ -413,6 +420,7 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
+            <TextField fx:id="nombre_PLANTA_TRES" layoutX="63.0" layoutY="397.0" />
          </children>
       </Pane>
       <Button fx:id="gameOverButton" layoutX="991.0" layoutY="598.0" mnemonicParsing="false" onAction="#gameOver" prefHeight="35.0" prefWidth="133.0">

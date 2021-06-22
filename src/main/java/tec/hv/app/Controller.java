@@ -73,8 +73,29 @@ public class Controller {
     public Button gameOverButton;
     public TextField txScore;
     public TextField txDay;
-    
+    public TextField nombre_PLANTA_UNO;
+    public TextField nombrePersona;
+    public TextField nombre_PLANTA_DOS;
+    public TextField nombre_PLANTA_TRES;
+
     ArrayList<PlantCreator> plantas;
+
+
+    public void setNombre_PLANTA_TRES(String nombre_planta_tres){
+        nombre_PLANTA_TRES.setText(nombre_planta_tres);
+    }
+
+    public void setNombre_PLANTA_DOS(String nombre_planta_dos){
+        nombre_PLANTA_DOS.setText(nombre_planta_dos);
+    }
+
+    public void setNombre_PLANTA_UNO(String nombre_planta_uno){
+        nombre_PLANTA_UNO.setText(nombre_planta_uno);
+    }
+
+    public void setNombrePersona(String nombre){
+        nombrePersona.setText(nombre);
+    }
 
     public void setDia(int dia){
         txDay.setText(String.valueOf(dia));

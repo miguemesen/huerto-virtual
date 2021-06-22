@@ -388,22 +388,22 @@
                   <Image url="@Insecto.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaAgua_PLANTA_TRES" fitHeight="96.0" fitWidth="132.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaAgua_PLANTA_TRES" fitHeight="96.0" fitWidth="132.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@alertaAgua.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaAbono_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaAbono_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@alertaAbono.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaCosecha_PLANTA_TRES" fitHeight="96.0" fitWidth="136.0" layoutX="170.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaCosecha_PLANTA_TRES" fitHeight="96.0" fitWidth="136.0" layoutX="170.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@alertaCosecha.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaPlaga_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaPlaga_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="175.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@alertaPlaga.png" />
                </image>
