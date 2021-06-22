@@ -17,6 +17,7 @@ public class ControlCosecha extends Thread {
 	      int i = 0;
 	      time++;
 	      while (i < plantas.size()) {
+
 	    	 
 	    	//  System.out.println("Cosechaa");
 	        if ((day % plantas.get(i).getRangoCosecha()) == 0 && plantas.get(i).getCosecha() == true) {
