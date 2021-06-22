@@ -80,18 +80,20 @@ public class Controller {
 
     ArrayList<PlantCreator> plantas;
 
-
-    public void setNombre_PLANTA_TRES(String nombre_planta_tres){
-        nombre_PLANTA_TRES.setText(nombre_planta_tres);
+    public void setNombrePlanta(int posicion,String nombre){
+    	
+    	if (posicion == 0){
+    		nombre_PLANTA_UNO.setText(nombre);
+        }
+        if (posicion == 1){
+        	nombre_PLANTA_DOS.setText(nombre);
+        }
+        if (posicion == 2){
+        	 nombre_PLANTA_TRES.setText(nombre);
+        }
+    	
     }
 
-    public void setNombre_PLANTA_DOS(String nombre_planta_dos){
-        nombre_PLANTA_DOS.setText(nombre_planta_dos);
-    }
-
-    public void setNombre_PLANTA_UNO(String nombre_planta_uno){
-        nombre_PLANTA_UNO.setText(nombre_planta_uno);
-    }
 
     public void setNombrePersona(String nombre){
         nombrePersona.setText(nombre);

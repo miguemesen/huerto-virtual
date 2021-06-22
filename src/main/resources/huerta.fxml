@@ -140,22 +140,20 @@
                   </ImageView>
                </graphic>
             </Button>
-            <TextField fx:id="txScore" editable="false" layoutX="37.0" layoutY="11.0" prefHeight="51.0" prefWidth="83.0">
+            <TextField fx:id="txScore" alignment="CENTER" editable="false" layoutX="37.0" layoutY="11.0" prefHeight="51.0" prefWidth="83.0">
                <font>
-                  <Font name="Franklin Gothic Book" size="28.0" />
+                  <Font name="Impact" size="28.0" />
                </font>
             </TextField>
-            <TextField fx:id="nombre_PLANTA_UNO" editable="false" layoutX="53.0" layoutY="394.0" />
-            <TextField fx:id="nombrePersona" editable="false" layoutX="-105.0" layoutY="80.0">
+            <TextField fx:id="nombre_PLANTA_UNO" alignment="CENTER" layoutX="80.0" layoutY="400.0" prefHeight="34.0" prefWidth="102.0">
                <font>
-                  <Font size="15.0" />
+                  <Font name="Impact" size="17.0" />
+               </font></TextField>
+            <TextField fx:id="nombrePersona" layoutX="-88.0" layoutY="80.0" prefHeight="28.0" prefWidth="102.0">
+               <font>
+                  <Font name="Impact" size="15.0" />
                </font>
             </TextField>
-            <Label layoutX="307.0" layoutY="5.0" text="Día:">
-               <font>
-                  <Font size="42.0" />
-               </font>
-            </Label>
       
       
       
@@ -287,15 +285,19 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-            <TextField fx:id="txDay" editable="false" layoutX="37.0" layoutY="10.0" prefHeight="39.0" prefWidth="69.0">
+            <Label layoutX="22.0" layoutY="9.0" text="Día:">
                <font>
-                  <Font name="Franklin Gothic Book" size="28.0" />
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txDay" alignment="CENTER" editable="false" layoutX="99.0" layoutY="19.0" prefHeight="39.0" prefWidth="69.0">
+               <font>
+                  <Font name="Impact" size="22.0" />
                </font>
             </TextField>
-            <TextField fx:id="nombre_PLANTA_DOS" editable="false" layoutX="63.0" layoutY="396.0" />
-            <TextField editable="false" layoutX="121.0" layoutY="16.0" prefHeight="39.0" prefWidth="57.0">
+            <TextField fx:id="nombre_PLANTA_DOS" alignment="CENTER" layoutX="83.0" layoutY="396.0" prefHeight="34.0" prefWidth="102.0">
                <font>
-                  <Font size="21.0" />
+                  <Font name="Impact" size="17.0" />
                </font>
             </TextField>
          </children>
@@ -425,7 +427,11 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-            <TextField fx:id="nombre_PLANTA_TRES" editable="false" layoutX="63.0" layoutY="397.0" />
+            <TextField fx:id="nombre_PLANTA_TRES" alignment="CENTER" layoutX="92.0" layoutY="400.0" prefHeight="34.0" prefWidth="102.0">
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+            </TextField>
          </children>
       </Pane>
       <Button fx:id="gameOverButton" layoutX="991.0" layoutY="598.0" mnemonicParsing="false" onAction="#gameOver" prefHeight="35.0" prefWidth="133.0">

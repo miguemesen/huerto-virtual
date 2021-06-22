@@ -19,6 +19,7 @@ public class controlBackend extends Thread{
 
 	    for (int i=0; i < plantas.size(); i++){
 	    	if (plantas.get(i).getTipo().equals("CicloCorto") && i==0){
+	    		
 	    		controlador.plantaNormal_PLANTA_UNO.setVisible(false);
 	    		controlador.plantaBrocoli_PLANTA_UNO.setVisible(true);
 			}
@@ -30,11 +31,15 @@ public class controlBackend extends Thread{
 				controlador.plantaNormal_PLANTA_TRES.setVisible(false);
 				controlador.plantaBrocoli_PLANTA_TRES.setVisible(true);
 			}
+			controlador.setNombrePlanta(i,plantas.get(i).getNombre());
 		}
 
 	    controlador.setPlantas(plantas);
-	    controlador.setPuntaje(100);
+	    
 	    Player jugador = parser.cargarJugador();
+	    controlador.setNombrePersona(jugador.getNombre());
+	    controlador.setPuntaje(jugador.getPuntaje());
+	    
 	    
 	    DayProcess dia = new DayProcess();
      	dia.iniciarDia(plantas,jugador,controlador);
