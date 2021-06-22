@@ -16,7 +16,11 @@ public class StartScreenController {
         try {
             Stage stage = (Stage) startButton.getScene().getWindow();
             stage.close();
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("huerta.fxml")));
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/huerta.fxml"));
+            Parent root = loader.load();
+
+
             Stage gameStage = new Stage();
             gameStage.setTitle("Huerta virtual");
             gameStage.setResizable(false);
