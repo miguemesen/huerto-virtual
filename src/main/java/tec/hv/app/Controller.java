@@ -211,9 +211,6 @@ public class Controller {
 
 
 
-
-
-
     public void gameOver(ActionEvent actionEvent) {
         try {
             Stage stage = (Stage) gameOverButton.getScene().getWindow();
