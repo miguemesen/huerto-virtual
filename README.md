@@ -5,3 +5,6 @@
 
 ### Video Revision Miguel Mesen Molina 2019227371
 https://youtu.be/o01PDTl-l6E
+
+### Video Revision German Josué Martínez Rivera 2019208846
+https://youtu.be/jZpUUDZSTFo
