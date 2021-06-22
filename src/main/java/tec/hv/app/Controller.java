@@ -79,16 +79,16 @@ public class Controller {
     public TextField nombrePersona;
     public TextField nombre_PLANTA_DOS;
     public TextField nombre_PLANTA_TRES;
+    public Label labelGameOver;
     ArrayList<PlantCreator> plantas;
 
-    
-    public void gameOver() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-	    alert.setHeaderText(null);
-	    alert.setTitle("Gamer Over");
-	    alert.setContentText("Haz descuiado tus plantas...");
-	    alert.showAndWait();
-    	System.out.println("FINIS!");
+
+    public void displayGameOver(){
+        labelGameOver.setVisible(true);
+    }
+
+    public void removeGameOver(){
+        labelGameOver.setVisible(false);
     }
     
     public void setNombrePlanta(int posicion,String nombre){

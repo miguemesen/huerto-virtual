@@ -13,7 +13,7 @@ public class DayProcess extends Thread {
   ControlAbono hiloAbono;
   ControlPlaga hiloPlaga;
   ControlCosecha hiloCosecha;
-  EndGame hiloFinish;
+
 @SuppressWarnings("deprecation")
 
 public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Controller controlador) {
@@ -25,7 +25,6 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
     this.hiloAbono = new ControlAbono(plantas,dias,controlador);
     this.hiloPlaga = new ControlPlaga(plantas,dias,controlador);
     this.hiloCosecha = new ControlCosecha(plantas,dias,controlador);
-    this.hiloFinish = new EndGame();
     controlador.setDia(dias);
     controlador.setTimer(00);
     
@@ -115,9 +114,7 @@ public void finalizar() {
 	hiloPlaga.stop();
 	
 	System.out.println("Fin del juego");
-	//controlador.gameOver();
-	hiloFinish.start();
-	System.exit(0);
+	controlador.displayGameOver();
 	
 }
 	 

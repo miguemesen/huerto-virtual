@@ -16,19 +16,14 @@ public class StartScreenController {
     public void empezarJuego(ActionEvent actionEvent) {
         try {
         	
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-    	    alert.setHeaderText(null);
-    	    alert.setTitle("Gamer Over");
-    	    alert.setContentText("Haz descuiado tus plantas...");
-    	    alert.showAndWait();
-        	System.out.println("FINIS!");
-        	
             Stage stage = (Stage) startButton.getScene().getWindow();
             stage.close();
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/huerta.fxml"));
             Parent root = loader.load();
             Controller controller = loader.getController();
+
+            controller.removeGameOver();
 
             Stage gameStage = new Stage();
             gameStage.setTitle("Huerta virtual");

@@ -300,6 +300,11 @@
                   <Image url="@alertaCosecha.png" />
                </image>
             </ImageView>
+            <Label fx:id="labelGameOver" layoutX="-149.0" layoutY="199.0" text="Game Over" visible="false">
+               <font>
+                  <Font size="96.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
 
