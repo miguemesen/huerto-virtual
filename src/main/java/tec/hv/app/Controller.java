@@ -80,10 +80,7 @@ public class Controller {
     // Puntaje
     public Label scoreLabel;
 
-    public void bajarPuntos(int puntosPorBajar) {
-        System.out.println("Entra");
-        int puntaje = Integer.parseInt(scoreLabel.getText());
-        int nuevoPuntaje = puntaje-puntosPorBajar;
+    public void bajarPuntos(int nuevoPuntaje) {
         scoreLabel.setText(String.valueOf(nuevoPuntaje));
     }
 
