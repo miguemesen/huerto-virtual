@@ -17,6 +17,9 @@ public class ControlRiego extends Thread {
       int i = 0;
       time++;
       System.out.println("Regar: " + time);
+      if (time % 5 == 0) {
+    	  controlador.setTimer(time);
+      }
       while (i < plantas.size()) {
 
       

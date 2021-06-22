@@ -19,16 +19,16 @@
     {
       "tipo": "CicloCorto",
       "nombre": "Brocoli", 
-      "riego":1,
-      "abono":3,
-      "cosecha":3
+      "riego":2,
+      "abono":2,
+      "cosecha":1
     },
     {
       "tipo": "Ornamental", 
       "nombre": "Orquidea",
-      "riego":1,
-      "abono":3,
-      "cosecha":3
+      "riego":2,
+      "abono":2,
+      "cosecha":1
     }
     
   ]

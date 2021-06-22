@@ -73,6 +73,7 @@ public class Controller {
     public Button gameOverButton;
     public TextField txScore;
     public TextField txDay;
+    public TextField txTimer;
     public TextField nombre_PLANTA_UNO;
     public TextField nombrePersona;
     public TextField nombre_PLANTA_DOS;
@@ -103,6 +104,9 @@ public class Controller {
         txDay.setText(String.valueOf(dia));
     }
     
+    public void setTimer(int time){
+        txTimer.setText(String.valueOf(time));
+    }
     public void setPuntaje(int puntaje){
         txScore.setText(String.valueOf(puntaje));
     }
@@ -325,7 +329,7 @@ public class Controller {
                 break;
 
             case 2: // Posicion 3
-                if (tipo == "Ornamental"){ // Orquidea
+                if (tipo.equals("Ornamental")){ // Orquidea
                     orchid1_PLANTA_TRES.setVisible(true);
                     orchid2_PLANTA_TRES.setVisible(true);
                     orchid3_PLANTA_TRES.setVisible(true);

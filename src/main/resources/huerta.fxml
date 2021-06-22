@@ -79,24 +79,9 @@
                   <Image url="@Insecto.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaAgua_PLANTA_UNO" fitHeight="96.0" fitWidth="132.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaAgua_PLANTA_UNO" fitHeight="96.0" fitWidth="132.0" layoutX="195.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaAgua.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="alertaAbono_PLANTA_UNO" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@alertaAbono.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="alertaCosecha_PLANTA_UNO" fitHeight="96.0" fitWidth="136.0" layoutX="175.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@alertaCosecha.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="alertaPlaga_PLANTA_UNO" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@alertaPlaga.png" />
                </image>
             </ImageView>
             <ImageView fx:id="tomato3_PLANTA_UNO" fitHeight="35.0" fitWidth="42.0" layoutX="177.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" visible="false">
@@ -154,6 +139,11 @@
                   <Font name="Impact" size="15.0" />
                </font>
             </TextField>
+            <Label layoutX="301.0" layoutY="6.0" text="Día:">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
       
       
       
@@ -260,7 +250,7 @@
                   <Image url="@Insecto.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaAgua_PLANTA_DOS" fitHeight="96.0" fitWidth="132.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaAgua_PLANTA_DOS" fitHeight="96.0" fitWidth="132.0" layoutX="174.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaAgua.png" />
                </image>
@@ -275,22 +265,12 @@
                   <Image url="@alertaCosecha.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaPlaga_PLANTA_DOS" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
-               <image>
-                  <Image url="@alertaPlaga.png" />
-               </image>
-            </ImageView>
             <ImageView fx:id="tomato3_PLANTA_DOS" fitHeight="35.0" fitWidth="42.0" layoutX="177.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-            <Label layoutX="22.0" layoutY="9.0" text="Día:">
-               <font>
-                  <Font size="42.0" />
-               </font>
-            </Label>
-            <TextField fx:id="txDay" alignment="CENTER" editable="false" layoutX="99.0" layoutY="19.0" prefHeight="39.0" prefWidth="69.0">
+            <TextField fx:id="txDay" alignment="CENTER" editable="false" layoutX="37.0" layoutY="19.0" prefHeight="39.0" prefWidth="69.0">
                <font>
                   <Font name="Impact" size="22.0" />
                </font>
@@ -300,6 +280,26 @@
                   <Font name="Impact" size="17.0" />
                </font>
             </TextField>
+            <TextField fx:id="txTimer" alignment="CENTER" editable="false" layoutX="115.0" layoutY="19.0" prefHeight="42.0" prefWidth="51.0">
+               <font>
+                  <Font name="Impact" size="22.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="alertaPlaga_PLANTA_UNO" fitHeight="96.0" fitWidth="118.0" layoutX="-154.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@alertaPlaga.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="alertaAbono_PLANTA_UNO" fitHeight="96.0" fitWidth="118.0" layoutX="-164.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@alertaAbono.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="alertaCosecha_PLANTA_UNO" fitHeight="96.0" fitWidth="136.0" layoutX="-154.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@alertaCosecha.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
 
@@ -402,22 +402,22 @@
                   <Image url="@Insecto.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaAgua_PLANTA_TRES" fitHeight="96.0" fitWidth="132.0" layoutX="170.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaAgua_PLANTA_TRES" fitHeight="96.0" fitWidth="132.0" layoutX="194.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaAgua.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaAbono_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="170.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaAbono_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="186.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaAbono.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaCosecha_PLANTA_TRES" fitHeight="96.0" fitWidth="136.0" layoutX="170.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaCosecha_PLANTA_TRES" fitHeight="96.0" fitWidth="136.0" layoutX="186.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaCosecha.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="alertaPlaga_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="175.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <ImageView fx:id="alertaPlaga_PLANTA_TRES" fitHeight="96.0" fitWidth="118.0" layoutX="194.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
                   <Image url="@alertaPlaga.png" />
                </image>
@@ -432,6 +432,11 @@
                   <Font name="Impact" size="17.0" />
                </font>
             </TextField>
+            <ImageView fx:id="alertaPlaga_PLANTA_DOS" fitHeight="96.0" fitWidth="118.0" layoutX="-150.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@alertaPlaga.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <Button fx:id="gameOverButton" layoutX="991.0" layoutY="598.0" mnemonicParsing="false" onAction="#gameOver" prefHeight="35.0" prefWidth="133.0">

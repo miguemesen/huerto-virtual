@@ -40,7 +40,6 @@ public class controlBackend extends Thread{
 	    controlador.setNombrePersona(jugador.getNombre());
 	    controlador.setPuntaje(jugador.getPuntaje());
 	    
-	    
 	    DayProcess dia = new DayProcess();
      	dia.iniciarDia(plantas,jugador,controlador);
      	

@@ -9,8 +9,8 @@ public class ControlPlaga extends Thread {
   int time;
   int day;
 
-  //int plagaDay = r.nextInt(2)+1;
-  int plagaDay = 2;
+  int plagaDay = r.nextInt(2)+1;
+  //int plagaDay = 2;
   int infectada;
   Controller controlador;
   
@@ -24,7 +24,7 @@ public class ControlPlaga extends Thread {
   public void run() {
 	
     while (time!=30) {
-  //  System.out.println("rplaga: "+plagaDay);
+    System.out.println("dia: "+plagaDay +" Infec"+ infectada );
       time++;
 
       

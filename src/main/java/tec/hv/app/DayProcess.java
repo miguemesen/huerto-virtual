@@ -26,6 +26,7 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
     this.hiloCosecha = new ControlCosecha(plantas,dias,controlador);
     
     controlador.setDia(dias);
+    controlador.setTimer(00);
     
     hiloRiego.start();
     try {
@@ -68,9 +69,6 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
   
   public void analisis() {
 	  dias++;
-	  System.out.print("Vamos a analizar: "+ dias);
-	  
-	  
 	  int restar=0;  
 	  for (int i=0; i<plantas.size();i++) {	  
 		  
@@ -93,13 +91,18 @@ public void iniciarDia(ArrayList < PlantCreator > plantasx, Player player,Contro
 	  
 	  puntaje = jugador.getPuntaje()-restar; 
 	  jugador.setPuntaje(puntaje);
-	  controlador.setPuntaje(puntaje);
-	  System.out.println("Puntos: "+puntaje);
+	 
+	  
+	  
+	  System.out.println("\nPuntos: "+puntaje);
 	  	  
 	  if (puntaje>=5) {
-	  iniciarDia(plantas,jugador,controlador); 
+		  controlador.setPuntaje(puntaje);
+		  iniciarDia(plantas,jugador,controlador); 
+	  
 	  }
 	  else {
+		  controlador.setPuntaje(00);
 		  finalizar();
 	  }
   }
