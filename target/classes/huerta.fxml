@@ -16,12 +16,6 @@
             <Image url="@background.png" />
          </image>
       </ImageView>
-      <Button fx:id="bajarPuntosButton" layoutX="29.0" layoutY="608.0" mnemonicParsing="false" onAction="#bajarPuntos" text="Bajar puntaje" />
-      <Label fx:id="scoreLabel" layoutX="1048.0" text="100" textFill="WHITE">
-         <font>
-            <Font size="46.0" />
-         </font>
-      </Label>
 
       <!-- PLANTA UNO __________________________________________________________________________________ -->
 
@@ -146,6 +140,11 @@
                   </ImageView>
                </graphic>
             </Button>
+            <Label fx:id="scoreLabel" layoutX="42.0" text="100" textFill="WHITE">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
       
       
       
@@ -404,11 +403,6 @@
                   <Image url="@tomato.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="45.0" fitWidth="118.0" layoutX="145.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@score.png" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
       <Button fx:id="gameOverButton" layoutX="991.0" layoutY="598.0" mnemonicParsing="false" onAction="#gameOver" prefHeight="35.0" prefWidth="133.0">
@@ -420,6 +414,11 @@
             </ImageView>
          </graphic>
       </Button>
+      <ImageView fitHeight="45.0" fitWidth="118.0" layoutX="27.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@score.png" />
+         </image>
+      </ImageView>
 
    </children>
 </AnchorPane>

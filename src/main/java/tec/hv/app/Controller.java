@@ -70,8 +70,13 @@ public class Controller {
 
 
     public Button gameOverButton;
+    public Label diaActual;
 
     ArrayList<PlantCreator> plantas;
+
+    public void setDia(int dia){
+        scoreLabel.setText(String.valueOf(dia));
+    }
 
     public void setPlantas(ArrayList<PlantCreator> plantas) {
         this.plantas = plantas;
